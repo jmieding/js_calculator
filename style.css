@@ -1,0 +1,71 @@
+@font-face { font-family: digital-7; src: url('digital-7.ttf'); } 
+
+body {
+  background: rgb(220,220,220);
+}
+
+#main {
+  max-width: 270px;
+  max-height: 700px;
+  margin: 5% auto 0 auto;
+  border: solid black 1px;
+  border-radius: 50%/15px;
+  background: rgb(50,50,50);
+  background: -webkit-linear-gradient(rgb(80,80,80) 95%, black); 
+  background: -o-linear-gradient(rgb(80,80,80) 95%, black);
+  background: -moz-linear-gradient(rgb(80,80,80) 95%, black);
+  background: linear-gradient(rgb(80,80,80) 95%, black);
+  box-shadow: 2px 1px 5px black;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5%;
+  font-family: garamond;
+  color: white;
+  font-weight: normal;
+}
+
+#viewport {
+  padding-top: 5px;
+  width: 220px;
+  border: solid black 1px;
+  font-family: digital-7;
+  font-size: 40px;
+  text-align: right;
+  margin: 20px auto 15px auto;
+  border-radius: 5px;
+  background: rgb(222,222,196); /*#96A2CA;*/
+}
+
+#buttons {
+  width: 80%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#buttons button {
+  background-color: black;
+  color: white;
+  border-radius: 50%/5px;
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  margin-bottom: 5px;
+  border-top-color: rgb(120,120,120);
+  border-left-color: rgb(120,120,120);
+}
+
+#buttons:after {
+  display:inline-block;
+  width:100%;
+  content:'';
+}
+
+#all_clear, #clear_last {
+  background: rgb(139,20,20) !important;
+}
+
+#equals {
+  background: rgb(220,95,21) !important;
+}
