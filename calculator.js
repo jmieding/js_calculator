@@ -3,10 +3,6 @@ $(document).ready(function() {
   var nums = [];
   var currentNum = '';
 
-  // function clearLast(nums) {
-  //   nums.pop();
-  // }
-
   function addNum(entry) {
     currentNum += entry;
     document.getElementById('viewport').innerHTML = currentNum;
@@ -28,9 +24,14 @@ $(document).ready(function() {
     document.getElementById('viewport').innerHTML = currentNum;
   }
 
-  function allClear () {
+  function allClear() {
     nums = [];
     currentNum = ''
+    document.getElementById('viewport').innerHTML = '0';
+  }
+
+  function clearLast() {
+    currentNum = '';
     document.getElementById('viewport').innerHTML = '0';
   }
 
@@ -72,4 +73,5 @@ $(document).ready(function() {
   $('#equals').click(function() { equals(nums) });
 
   $('#all_clear').click(function() { allClear() });
+  $('#clear_last').click(function() { clearLast() });
 });
