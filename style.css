@@ -38,6 +38,12 @@ h2 {
   background: rgb(222,222,196); /*#96A2CA;*/
 }
 
+@media (max-width: 767px) {
+  #viewport {
+    padding-bottom: 10px;
+  }
+}
+
 #buttons {
   width: 80%;
   text-align: justify;
